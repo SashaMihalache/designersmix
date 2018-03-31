@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardsView.css";
+import "./MixesView.css";
 import { getData } from "../../utils/CardsRepository";
 import Card from './Card/Card';
 
@@ -10,15 +10,18 @@ class CardsView extends React.Component {
 
   componentDidMount() {
     getData().then(cards => {
-      console.log("intra", cards);
       this.setState({ cards });
     });
   }
 
   render() {
     return (
-      <div className="cards-view">
-        <div className="cards-list">
+      <div className="mixes-view">
+        <div className="mixes-filter">
+          <div className="filter active">Recent</div>
+          <div className="filter">Popular</div>
+        </div>
+        <div className="mixes-list">
           {this.state.cards.map(card => {
             return <Card card={card} key={card.id} />;
           })}

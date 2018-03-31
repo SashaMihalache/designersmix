@@ -1,25 +1,44 @@
 nav {
   height: 82px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(14,14,14,.98);
   color: white;
+  width: 100%;
+  position: absolute;
+}
+
+nav .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
+  z-index: 9999;
 }
 
-nav .title,
-nav .menu {
+nav .container .title,
+nav .container .menu {
+  cursor: pointer;
   font-size: 2em;
+  margin-left: 50px;
 }
 
-nav .action-panel {
+nav .container .action-panel {
   display: flex;
 }
 
-nav .action-panel div {
+nav .container .action-panel div {
   margin-right: 10px;
 }
 
-.menu:before {
+nav .container .menu {
+  transition: transform ease-out .2s;
+  transform: scale(1);
+}
+
+nav .container .menu:hover {
+  transition: transform ease-in .2s;
+  transform: scale(1.4);
+}
+
+nav .container .menu:before {
   content: "\2630";
 }

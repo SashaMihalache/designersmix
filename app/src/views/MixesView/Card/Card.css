@@ -1,3 +1,11 @@
+.card-container {
+	margin: 10px;
+	position: relative;
+	width: 200px;
+	height: 230px;
+}
+
+
 .card {
 	width: 200px;
 	height: 230px;
@@ -24,7 +32,7 @@
 
 .card .designer .name {
 	margin-left: 10px;
-	color: #0c0c0c;
+	color: rgb(172, 172, 172);
 }
 
 .card .designer img {
@@ -32,7 +40,7 @@
 	height: 20px;
 }
 
-.overlay {
+.card-container .overlay {
 	position: absolute;
 	width: 200px;
 	height: 230px;
@@ -48,19 +56,12 @@
 	left: 0;
 }
 
-.overlay:hover {
+.card-container .overlay:hover {
 	opacity: 1;
 	transition: 0.5s;
 }
 
-.overlay div {
+.card-container .overlay div {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-.card-container {
-	margin: 10px;
-	position: relative;
-	width: 200px;
-	height: 230px;
 }

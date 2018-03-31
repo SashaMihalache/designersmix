@@ -1,16 +1,22 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = () => (
-  <nav>
-    <div className="menu" />
-    <div className="title">DesignerMX</div>
-    <div className="action-panel">
-      <div className="login">Login</div>
-      <div className="separator">|</div>
-      <div className="logout">Logout</div>
-    </div>
-  </nav>
-);
+class Navbar extends React.Component {
+  render() {
+    return (
+      <nav>
+        <div className="container">
+          <div className="menu" onClick={this.props.onToggleOverlay} />
+          <div className="title">Designer's Mix</div>
+          <div className="action-panel">
+            <div className="login">Login</div>
+            <div className="separator">|</div>
+            <div className="logout">Logout</div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
 
 export default Navbar;

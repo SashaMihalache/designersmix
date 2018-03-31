@@ -1,12 +1,15 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './Main.css';
-import CardsView from '../../views/CardsView/CardsView';
+
+import LandingView from '../../views/LandingView/LandingView';
+import MixesView from '../../views/MixesView/MixesView';
 
 const Main = () => (
   <main className='content-container'>
     <Switch>
-      <Route exact path='/' component={CardsView} />
+      <Route exact path='/' component={LandingView} />
+      <Route exact path='/mixes' component={MixesView} />
     </Switch>
   </main>
 )
