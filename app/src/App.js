@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React from "react";
+import "./App.css";
 
-class App extends Component {
+import Navbar from "./layout/Navbar/Navbar";
+import Main from "./layout/Main/Main";
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        Designer's Mix
+      <div className="main-container">
+        <Navbar />
+        <Main />
       </div>
     );
   }

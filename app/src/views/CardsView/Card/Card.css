@@ -1,0 +1,66 @@
+.card {
+	width: 200px;
+	height: 230px;
+	margin: 10px;
+	position: relative;
+	filter: blur(0px);
+}
+
+.card.active {
+	filter: blur(2px);
+}
+
+.card img {
+	width: 200px;
+	height: 200px;
+}
+
+.card .designer {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.card .designer .name {
+	margin-left: 10px;
+	color: #0c0c0c;
+}
+
+.card .designer img {
+	width: 20px;
+	height: 20px;
+}
+
+.overlay {
+	position: absolute;
+	width: 200px;
+	height: 230px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.3em;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+
+.overlay:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.overlay div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.card-container {
+	margin: 10px;
+	position: relative;
+	width: 200px;
+	height: 230px;
+}

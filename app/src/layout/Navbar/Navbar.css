@@ -1,0 +1,25 @@
+nav {
+  height: 82px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .title,
+nav .menu {
+  font-size: 2em;
+}
+
+nav .action-panel {
+  display: flex;
+}
+
+nav .action-panel div {
+  margin-right: 10px;
+}
+
+.menu:before {
+  content: "\2630";
+}
