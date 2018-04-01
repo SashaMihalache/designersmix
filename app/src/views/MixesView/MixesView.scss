@@ -1,5 +1,5 @@
 .mixes-view {
-  padding: 30px;
+  padding: 40px;
 
   .mixes-filter {
     display: flex;
@@ -11,9 +11,11 @@
       color: #8c8c8c;
       cursor: pointer;
       margin-right: 10px;
+      font-weight: 300;
 
       &.active {
-        color: #fff;
+        color: #000;
+        font-weight: 700;
       }
 
       &:hover {

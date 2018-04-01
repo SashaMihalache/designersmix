@@ -1,19 +1,19 @@
 .overlay {
+  cursor: pointer;
   position: fixed; /* Sit on top of the page content */
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
-  top: 82px; 
+  top: 78px; 
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(14,14,14,.98); /* Black background with opacity */
   z-index: 9999;
-  cursor: pointer;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   font-size: 3.5em;
+  display: flex;
 
   .overlay-item {
     font-weight: 300;

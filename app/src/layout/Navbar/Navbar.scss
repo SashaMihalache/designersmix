@@ -2,16 +2,16 @@ nav {
   height: 82px;
   background-color: rgba(14,14,14,.98);
   color: white;
-  width: 100%;
-  position: fixed;
   z-index: 9999;
 
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     z-index: 9999;
+    width: 60%;
+    margin: 0 auto;
 
     .menu {
       transition: transform ease-out .2s;
@@ -31,12 +31,14 @@ nav {
   .container .title,
   .container .menu {
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.6em;
     margin-left: 50px;
   }
 
   .action-panel {
     display: flex;
+    font-weight: 300;
+    font-size: .8em;
 
     div {
       margin-right: 10px;

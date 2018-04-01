@@ -2,8 +2,10 @@ import React from 'react';
 import './Card.scss';
 
 class Cards extends React.Component {
-  handleMouseEnter = () => this.cardRef.classList.add('active');
-
+  handleMouseEnter = () => {
+    console.log("intra");
+    this.cardRef.classList.add('active');
+  }
   handleMouseLeave = () => this.cardRef.classList.remove('active');
 
   handleCardClick = () => {
