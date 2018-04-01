@@ -15,43 +15,5 @@ body {
 }
 
 .main-container {
-}
-
-.overlay {
-  position: fixed; /* Sit on top of the page content */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 82px; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(14,14,14,.98); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case youre using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3.5em;
-
-  .overlay-item {
-    font-weight: 300;
-    margin-top: 120px;
-    color: #fff;
-
-    a {
-      color: #fff;
-      text-decoration: none;
-
-      &:hover, &:active {
-        transition: color .2s;
-        color: rgba(255,255,255,.3);
-      }
-    }
-
-    &:hover {
-      transition: color .2s;
-      color: rgba(255,255,255,.3);
-    }
-  }
+  
 }

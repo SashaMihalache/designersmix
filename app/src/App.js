@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
 import "./App.scss";
 
 import Navbar from "./layout/Navbar/Navbar";
+import Overlay from './components/Overlay/Overlay';
 import Main from "./layout/Main/Main";
 
 class App extends React.Component {
@@ -19,14 +19,10 @@ class App extends React.Component {
       <div className="main-container">
         <Navbar onToggleOverlay={this.onToggleOverlay} />
         <Main />
-        {this.state.isOpen && (
-          <div className="overlay">
-            <div className='overlay-item' onClick={this.onCloseOverlay}><NavLink to='/designers'>DESIGNERS</NavLink></div>
-            <div className='overlay-item' onClick={this.onCloseOverlay}><NavLink to='/mixes'>MIXES</NavLink></div>
-            <div className='overlay-item' onClick={this.onCloseOverlay}><NavLink to='/about'>ABOUT</NavLink></div>
-            <div className='overlay-item' onClick={this.onCloseOverlay}><NavLink to='/contact'>CONTACT</NavLink></div>
-          </div>
-        )}
+        {
+          this.state.isOpen && 
+          <Overlay onCloseOverlay={this.onCloseOverlay} />
+        }
       </div>
     );
   }

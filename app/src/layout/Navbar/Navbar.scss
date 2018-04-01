@@ -3,7 +3,8 @@ nav {
   background-color: rgba(14,14,14,.98);
   color: white;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
 
   .container {
     display: flex;
