@@ -1,5 +1,5 @@
 import React from "react";
-import "./MixesView.css";
+import "./MixesView.scss";
 import { getData } from "../../utils/CardsRepository";
 import Card from './Card/Card';
 

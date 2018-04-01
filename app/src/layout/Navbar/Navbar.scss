@@ -1,0 +1,44 @@
+nav {
+  height: 82px;
+  background-color: rgba(14,14,14,.98);
+  color: white;
+  width: 100%;
+  position: absolute;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    z-index: 9999;
+
+    .menu {
+      transition: transform ease-out .2s;
+      transform: scale(1);
+
+      &:hover {
+        transition: transform ease-in .2s;
+        transform: scale(1.4);
+      }
+
+      &::before {
+        content: "\2630";
+      }
+    }
+  }
+
+  .container .title,
+  .container .menu {
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: 50px;
+  }
+
+  .action-panel {
+    display: flex;
+
+    div {
+      margin-right: 10px;
+    }
+  }
+}

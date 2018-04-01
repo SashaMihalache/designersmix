@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './LandingView.scss';
+
 class LandingView extends React.Component {
   render() {
     return (

@@ -15,7 +15,6 @@ body {
 }
 
 .main-container {
-  
 }
 
 .overlay {
@@ -27,23 +26,32 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(14,14,14,.98); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: 2; /* Specify a stack order in case youre using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   font-size: 3.5em;
-}
 
-.overlay .overlay-item {
-  font-weight: 300;
+  .overlay-item {
+    font-weight: 300;
+    margin-top: 120px;
+    color: #fff;
 
-  margin-top: 120px;
-  color: #fff;
-}
+    a {
+      color: #fff;
+      text-decoration: none;
 
-.overlay .overlay-item:hover {
-  transition: color .2s;
-  color: rgba(255,255,255,.3);
+      &:hover, &:active {
+        transition: color .2s;
+        color: rgba(255,255,255,.3);
+      }
+    }
+
+    &:hover {
+      transition: color .2s;
+      color: rgba(255,255,255,.3);
+    }
+  }
 }

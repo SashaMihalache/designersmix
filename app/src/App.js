@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import "./App.css";
+import "./App.scss";
 
 import Navbar from "./layout/Navbar/Navbar";
 import Main from "./layout/Main/Main";

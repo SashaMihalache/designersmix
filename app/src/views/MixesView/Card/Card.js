@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css';
+import './Card.scss';
 
 class Cards extends React.Component {
   handleMouseEnter = () => this.cardRef.classList.add('active');

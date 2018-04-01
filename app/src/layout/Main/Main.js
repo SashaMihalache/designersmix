@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './Main.css';
+import './Main.scss';
 
 import LandingView from '../../views/LandingView/LandingView';
 import MixesView from '../../views/MixesView/MixesView';

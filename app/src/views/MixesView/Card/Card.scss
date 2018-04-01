@@ -1,0 +1,75 @@
+.card-container {
+	margin: 10px;
+	position: relative;
+	width: 200px;
+	height: 230px;
+
+	.card {
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		position: relative;
+		filter: blur(0px);
+		transition: filter ease-out .4s;
+
+		&.active {
+			transition: filter ease-in .4s;
+			filter: blur(3px);
+		}
+
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.card-designer {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+
+		.name {
+			margin-left: 10px;
+			color: rgb(172, 172, 172);
+		}
+
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.card-overlay {
+		position: absolute;
+		background-color: rgba(20, 20, 20, .2);
+		width: 200px;
+		height: 200px;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 1.3em;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		transition: opacity ease-out 0.4s;
+		
+		&:hover {
+			opacity: 1;
+			cursor: pointer;
+			transition: opacity ease-in 0.4s;
+		}
+
+		div {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		span {
+			margin-left: 10px;
+		}
+	}
+}
