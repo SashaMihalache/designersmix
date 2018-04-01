@@ -5,17 +5,18 @@
 	height: 230px;
 }
 
-
 .card {
 	width: 200px;
-	height: 230px;
+	height: 200px;
 	margin: 10px;
 	position: relative;
 	filter: blur(0px);
+	transition: filter ease-out .4s;
 }
 
 .card.active {
-	filter: blur(2px);
+	transition: filter ease-in .4s;
+	filter: blur(3px);
 }
 
 .card img {
@@ -23,28 +24,29 @@
 	height: 200px;
 }
 
-.card .designer {
+.card-designer {
 	padding: 0;
 	margin: 0;
 	display: flex;
 	align-items: center;
 }
 
-.card .designer .name {
+.card-designer .name {
 	margin-left: 10px;
 	color: rgb(172, 172, 172);
 }
 
-.card .designer img {
+.card-designer img {
 	width: 20px;
 	height: 20px;
 }
 
 .card-container .card-overlay {
 	position: absolute;
+	background-color: rgba(20, 20, 20, .2);
 	width: 200px;
-	height: 230px;
-	margin: 10px;
+	height: 200px;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -54,14 +56,21 @@
 	opacity: 0;
 	top: 0;
 	left: 0;
+	transition: opacity ease-out 0.4s;
+	
 }
 
 .card-container .card-overlay:hover {
 	opacity: 1;
-	transition: 0.5s;
+	cursor: pointer;
+	transition: opacity ease-in 0.4s;
 }
 
 .card-container .card-overlay div {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.card-container .card-overlay span {
+	margin-left: 10px;
 }

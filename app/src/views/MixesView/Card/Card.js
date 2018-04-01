@@ -6,7 +6,13 @@ class Cards extends React.Component {
 
   handleMouseLeave = () => this.cardRef.classList.remove('active');
 
+  handleCardClick = () => {
+    console.log("clicked");
+  }
+
   render() {
+    const card = this.props.card;
+    const fullName = `${card.owner.first_name} ${card.owner.last_name}`;
     return (
       <div 
         className='card-container'
@@ -14,21 +20,18 @@ class Cards extends React.Component {
         onMouseEnter={this.handleMouseEnter}>
         <div
           className='card'
-          ref={crd => {
-            this.cardRef = crd;
-          }}
-        >
-          <img src={this.props.card.mixArt} />
-          <div className='designer'>
-            <img src={this.props.card.designerPic} />
-            <div className='name'>{this.props.card.designer}</div>
+          ref={crd => { this.cardRef = crd; }}>
+          <img src={card.cover_photo.url_base} alt='Not found'/>
+        </div>
+        <div className='card-overlay' onClick={this.handleCardClick}>
+          <div className='fa fa-heart'><span>{card.likes}</span></div>
+          <div className='fa fa-eye'><span>{card.views}</span></div>
+          <div className='fa fa-comments'><span>{card.comments}</span> </div>
+        </div>
+        <div className='card-designer'>
+            <img src={card.owner.avatar.url_base} alt='Not Found' />
+            <div className='name'>{fullName}</div>
           </div>
-        </div>
-        <div className='card-overlay'>
-          <div className='fa fa-heart'>{this.props.card.hearts}</div>
-          <div className='fa fa-eye'>{this.props.card.views}</div>
-          <div className='fa fa-comments'>{this.props.card.comments}</div>
-        </div>
       </div>
     );
   }

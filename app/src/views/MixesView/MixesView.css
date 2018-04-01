@@ -1,12 +1,12 @@
 .mixes-view {
-  margin-top: 82px;
+  padding: 40px;
 }
 
 .mixes-filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 20px;
 }
 
 .mixes-filter .filter {
