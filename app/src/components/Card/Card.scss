@@ -1,13 +1,11 @@
 .card-container {
-	margin: 10px;
 	position: relative;
-	width: 200px;
-	height: 230px;
+	width: 240px;
+	height: 270px;
 
 	.card {
-		width: 200px;
-		height: 200px;
-		margin: 10px;
+		width: 240px;
+		height: 240px;
 		position: relative;
 		filter: blur(0px);
 		transition: filter ease-out .4s;
@@ -18,8 +16,8 @@
 		}
 
 		img {
-			width: 200px;
-			height: 200px;
+			width: 240px;
+			height: 240px;
 		}
 	}
 
@@ -43,9 +41,8 @@
 	.card-overlay {
 		position: absolute;
 		background-color: rgba(20, 20, 20, .2);
-		width: 200px;
-		height: 200px;
-		padding: 10px;
+		width: 240px;
+		height: 240px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -64,12 +61,13 @@
 		}
 
 		div {
-			margin-top: 10px;
-			margin-bottom: 10px;
+			font-size: .9em;
+			margin-top: 5px;
+			margin-bottom: 5px;
 		}
 
 		span {
-			margin-left: 10px;
+			margin-left: 15px;
 		}
 	}
 }

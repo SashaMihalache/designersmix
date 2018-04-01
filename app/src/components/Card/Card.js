@@ -2,14 +2,15 @@ import React from 'react';
 import './Card.scss';
 
 class Cards extends React.Component {
-  handleMouseEnter = () => {
-    console.log("intra");
-    this.cardRef.classList.add('active');
-  }
+  handleMouseEnter = () => this.cardRef.classList.add('active');
   handleMouseLeave = () => this.cardRef.classList.remove('active');
 
-  handleCardClick = () => {
-    console.log("clicked");
+  handleMixClick = () => {
+    console.log("Clicked Mix");
+  }
+
+  handleDesignerClick = () => {
+    console.log("Clicked designer");
   }
 
   render() {
@@ -25,12 +26,12 @@ class Cards extends React.Component {
           ref={crd => { this.cardRef = crd; }}>
           <img src={card.cover_photo.url_base} alt='Not found'/>
         </div>
-        <div className='card-overlay' onClick={this.handleCardClick}>
+        <div className='card-overlay' onClick={this.handleMixClick}>
           <div className='fa fa-heart'><span>{card.likes}</span></div>
           <div className='fa fa-eye'><span>{card.views}</span></div>
           <div className='fa fa-comments'><span>{card.comments}</span> </div>
         </div>
-        <div className='card-designer'>
+        <div className='card-designer' onClick={this.handleDesignerClick}>
             <img src={card.owner.avatar.url_base} alt='Not Found' />
             <div className='name'>{fullName}</div>
           </div>

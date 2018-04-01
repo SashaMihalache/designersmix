@@ -1,7 +1,7 @@
 import React from "react";
 import "./MixesView.scss";
 import { getData } from "../../utils/CardsRepository";
-import Card from './Card/Card';
+import Card from '../../components/Card/Card';
 
 class CardsView extends React.Component {
   state = {
