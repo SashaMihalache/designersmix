@@ -24,7 +24,7 @@ class Cards extends React.Component {
             <div className='name'>{this.props.card.designer}</div>
           </div>
         </div>
-        <div className='overlay'>
+        <div className='card-overlay'>
           <div className='fa fa-heart'>{this.props.card.hearts}</div>
           <div className='fa fa-eye'>{this.props.card.views}</div>
           <div className='fa fa-comments'>{this.props.card.comments}</div>

@@ -40,7 +40,7 @@
 	height: 20px;
 }
 
-.card-container .overlay {
+.card-container .card-overlay {
 	position: absolute;
 	width: 200px;
 	height: 230px;
@@ -56,12 +56,12 @@
 	left: 0;
 }
 
-.card-container .overlay:hover {
+.card-container .card-overlay:hover {
 	opacity: 1;
 	transition: 0.5s;
 }
 
-.card-container .overlay div {
+.card-container .card-overlay div {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
