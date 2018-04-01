@@ -9,7 +9,7 @@ class Navbar extends React.Component {
           <div className="menu">
             <div className="burger" onClick={this.props.onToggleOverlay} />
           </div>
-          <div className="title">Designer's Mix</div>
+          <div className="title">DESIGNER'S MIX</div>
           <div className="action-panel">
             <div className="login">Login</div>
             <div className="separator">|</div>
