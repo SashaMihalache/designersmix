@@ -4,6 +4,7 @@ import "./App.scss";
 import Navbar from "./layout/Navbar/Navbar";
 import Overlay from './components/Overlay/Overlay';
 import Main from "./layout/Main/Main";
+import Footer from './layout/Footer/Footer';
 
 class App extends React.Component {
   state = {
@@ -23,6 +24,7 @@ class App extends React.Component {
           this.state.isOpen && 
           <Overlay onCloseOverlay={this.onCloseOverlay} />
         }
+        <Footer />
       </div>
     );
   }
